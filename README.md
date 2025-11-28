@@ -49,8 +49,8 @@ These examples serve as practical references for integrating passthrough camera 
      "StreamingAssets/OpenCVForUnityExamples/objdetect/face_recognition_sface_2021dec.onnx")
 1. Import the QuestWithOpenCVForUnityExample.unitypackage.
 1. Add the following permissions to `Assets/Plugins/AndroidManifest.xml`.
-    * <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="false" />
-    * <uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />
+    * `<uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="false" />`
+    * `<uses-permission android:name="horizonos.permission.HEADSET_CAMERA" />`
 1. Add the "Assets/QuestWithOpenCVForUnityExample/*.unity" files to the "Scenes In Build" list in the "Build Settings" window.
 1. Build and Deploy.
     * (Please print the AR marker “ArUcoMarkers_DICT_4X4_50_0-8.pdf” on A4-sized paper and have it ready, as it is required for testing QuestArUcoExample)  
