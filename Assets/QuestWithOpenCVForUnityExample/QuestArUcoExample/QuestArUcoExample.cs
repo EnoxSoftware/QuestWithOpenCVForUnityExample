@@ -304,8 +304,8 @@ namespace QuestWithOpenCVForUnityExample
 
             _texture = new Texture2D((int)width, (int)height, TextureFormat.RGB24, false);
             PreviewQuad.GetComponent<MeshRenderer>().material.mainTexture = _texture;
+            PreviewQuad.GetComponent<RectTransform>().localScale = new Vector2(150f, 150f * (float)height / (float)width);
             PreviewQuad.SetActive(DisplayCameraPreview);
-
 
             //Debug.Log("Screen.width " + Screen.width + " Screen.height " + Screen.height + " Screen.orientation " + Screen.orientation);
 

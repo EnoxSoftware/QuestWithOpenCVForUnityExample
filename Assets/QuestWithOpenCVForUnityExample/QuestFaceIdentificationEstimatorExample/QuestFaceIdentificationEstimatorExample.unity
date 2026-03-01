@@ -3165,9 +3165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _requestedDeviceName: 
   _requestedWidth: 1280
-  _requestedHeight: 960
+  _requestedHeight: 1280
   _requestedIsFrontFacing: 0
-  _requestedFPS: 30
+  _requestedFPS: 60
   _rotate90Degree: 0
   _flipVertical: 0
   _flipHorizontal: 0
@@ -3222,8 +3222,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Eye: 0
-  PermissionRequestsOnStartup:
-  - com.oculus.permission.USE_SCENE
 --- !u!114 &1076083703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5241,11 +5239,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: _enableDynamicResolution
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: isInsightPassthroughEnabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: controllerDrivenHandPosesType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: requestPassthroughCameraAccessPermissionOnStartup
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5889,17 +5895,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4ad4f1ddee798f45a20be4efda35c8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3255887408194924105 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8596244716211811157, guid: 46fdef3df9a5a354caf7692f85e5eff2, type: 3}
-  m_PrefabInstance: {fileID: 3255887408194924102}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2705674196dfc4da9c25fbacda72d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &3707145647071160674
@@ -6583,26 +6578,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3707145647071160675}
     m_Modifications:
-    - target: {fileID: 5672528011978605038, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _hand
-      value: 
-      objectReference: {fileID: 4811587229737677143}
-    - target: {fileID: 5638346076790929818, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _monoBehaviours.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5638346076790929818, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: '_monoBehaviours.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3255887408194924105}
-    - target: {fileID: 8428581616887617374, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _trackingToWorldTransformer
-      value: 
-      objectReference: {fileID: 3707145647071160676}
-    - target: {fileID: 8144144904402691591, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _hmd
-      value: 
-      objectReference: {fileID: 3707145647071160678}
     - target: {fileID: 5205001753372523, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: _updateAfter
       value: 
@@ -6611,6 +6586,14 @@ PrefabInstance:
       propertyPath: _iModifyDataFromSourceMono
       value: 
       objectReference: {fileID: 4811587229737677145}
+    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _updateAfter
+      value: 
+      objectReference: {fileID: 8911615602729546425}
+    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _iModifyDataFromSourceMono
+      value: 
+      objectReference: {fileID: 8911615602729546425}
     - target: {fileID: 1099137237248971454, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: m_Name
       value: RightInteractions
@@ -6619,14 +6602,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _updateAfter
-      value: 
-      objectReference: {fileID: 8911615602729546425}
-    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _iModifyDataFromSourceMono
-      value: 
-      objectReference: {fileID: 8911615602729546425}
     - target: {fileID: 2346550294763588174, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: _handSkeletonProvider
       value: 
@@ -6691,6 +6666,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638346076790929818, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _monoBehaviours.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638346076790929818, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: '_monoBehaviours.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672528011978605038, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _hand
+      value: 
+      objectReference: {fileID: 4811587229737677143}
+    - target: {fileID: 8144144904402691591, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _hmd
+      value: 
+      objectReference: {fileID: 3707145647071160678}
+    - target: {fileID: 8428581616887617374, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _trackingToWorldTransformer
+      value: 
+      objectReference: {fileID: 3707145647071160676}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7360,26 +7355,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3707145647071160675}
     m_Modifications:
-    - target: {fileID: 5672528011978605038, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _hand
-      value: 
-      objectReference: {fileID: 4811587229737677147}
-    - target: {fileID: 6974750342258749398, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8428581616887617374, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _trackingToWorldTransformer
-      value: 
-      objectReference: {fileID: 3707145647071160676}
-    - target: {fileID: 8144144904402691591, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _hmd
-      value: 
-      objectReference: {fileID: 3707145647071160678}
-    - target: {fileID: 8802383908851546159, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5205001753372523, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: _updateAfter
       value: 
@@ -7388,18 +7363,18 @@ PrefabInstance:
       propertyPath: _iModifyDataFromSourceMono
       value: 
       objectReference: {fileID: 4811587229737677146}
+    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _updateAfter
+      value: 
+      objectReference: {fileID: 8911615602729546424}
+    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _iModifyDataFromSourceMono
+      value: 
+      objectReference: {fileID: 8911615602729546424}
     - target: {fileID: 1099137237248971454, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: m_Name
       value: LeftInteractions
       objectReference: {fileID: 0}
-    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _updateAfter
-      value: 
-      objectReference: {fileID: 8911615602729546424}
-    - target: {fileID: 730033537163591805, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: _iModifyDataFromSourceMono
-      value: 
-      objectReference: {fileID: 8911615602729546424}
     - target: {fileID: 2346550294763588174, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: _handSkeletonProvider
       value: 
@@ -7420,10 +7395,6 @@ PrefabInstance:
       propertyPath: '_handlers.Array.data[0]'
       value: 
       objectReference: {fileID: 3255887408194924104}
-    - target: {fileID: 4498320347217050774, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4302731831402729804, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7467,6 +7438,30 @@ PrefabInstance:
     - target: {fileID: 4302731831402729804, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498320347217050774, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5672528011978605038, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _hand
+      value: 
+      objectReference: {fileID: 4811587229737677147}
+    - target: {fileID: 6974750342258749398, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144144904402691591, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _hmd
+      value: 
+      objectReference: {fileID: 3707145647071160678}
+    - target: {fileID: 8428581616887617374, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: _trackingToWorldTransformer
+      value: 
+      objectReference: {fileID: 3707145647071160676}
+    - target: {fileID: 8802383908851546159, guid: 4c50e15ef9414324095a583c357b492c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

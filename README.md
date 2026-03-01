@@ -25,10 +25,11 @@ These examples serve as practical references for integrating passthrough camera 
 
 ## Environment
 * Meta Quest 3S
-* Unity 6000.0.59f2 / URP / OpenXR
-* [Meta Core XR SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-core-sdk-269169?aid=1011l4ehR) 81.0.0
-* [Meta Interaction SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-interaction-sdk-265014?aid=1011l4ehR) 81.0.0
-* [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088?aid=1011l4ehR) 3.0.1+ 
+* Unity 6000.0.68f1 / URP / OpenXR
+* [Meta Core XR SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-core-sdk-269169?aid=1011l4ehR) 85.0.0
+* [Meta Interaction SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-interaction-sdk-265014?aid=1011l4ehR) 85.0.0
+* [Meta MR Utility Kit](https://assetstore.unity.com/packages/tools/integration/meta-mr-utility-kit-272450?aid=1011l4ehR) 85.0.0
+* [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088?aid=1011l4ehR) 3.0.2+ 
 
 
 ## Setup
@@ -37,7 +38,7 @@ These examples serve as practical references for integrating passthrough camera 
     * Change the platform to `Android` in the "Build Settings" window.
 1. Setup Unity for VR development.  [Set up Unity for VR development](https://developers.meta.com/horizon/documentation/unity/unity-project-setup/)
     * Install the Unity OpenXR Plugin. (Option A)
-    * Import the `Meta Core XR SDK` and `Meta Interaction SDK` from [Meta Quest Unity Asset Store](https://assetstore.unity.com/publishers/25353).
+    * Import the `Meta Core XR SDK`, `Meta Interaction SDK` and `Meta MR Utility Kit` from [Meta Quest Unity Asset Store](https://assetstore.unity.com/publishers/25353).
 1. Import and setup the OpenCVForUnity.
     * Select MenuItem[Tools/OpenCV for Unity/Open Setup Tools].
     * Open [Example Assets Downloader] and click the buttons for `ObjectDetectionYOLOXExample` and `FaceIdentificationEstimatorExample` to download the dependent assets into your project.
