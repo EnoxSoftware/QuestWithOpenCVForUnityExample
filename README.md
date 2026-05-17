@@ -29,7 +29,7 @@ These examples serve as practical references for integrating passthrough camera 
 * [Meta Core XR SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-core-sdk-269169?aid=1011l4ehR) 85.0.0
 * [Meta Interaction SDK](https://assetstore.unity.com/packages/tools/integration/meta-xr-interaction-sdk-265014?aid=1011l4ehR) 85.0.0
 * [Meta MR Utility Kit](https://assetstore.unity.com/packages/tools/integration/meta-mr-utility-kit-272450?aid=1011l4ehR) 85.0.0
-* [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088?aid=1011l4ehR) 3.0.2+ 
+* [OpenCV for Unity](https://assetstore.unity.com/packages/tools/integration/opencv-for-unity-21088?aid=1011l4ehR) 3.0.3+ 
 
 
 ## Setup

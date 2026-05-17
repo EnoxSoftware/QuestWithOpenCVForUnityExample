@@ -1,0 +1,27 @@
+{
+    "name": "EnoxSoftware.QuestWithOpenCVForUnity",
+    "rootNamespace": "",
+    "references": [
+        "GUID:cef0e9dabbfe59a4790acbf31c21f33e",
+        "GUID:63a57c8b658089e49a173b0f0c4870a7",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:2a230cb87a1d3ba4a98bdc0ddae76e6c",
+        "GUID:7040c93f6035f5749888e6fdf5ef28f8",
+        "GUID:f5eda1afa2a1241a59c4db6830e1c890"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.ai.inference",
+            "expression": "2.6.1",
+            "define": "OPENCV_SENTIS_AVAILABLE"
+        }
+    ],
+    "noEngineReferences": false
+}

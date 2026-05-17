@@ -56,6 +56,11 @@ namespace QuestWithOpenCVForUnityExample
 #endif
 
             ScrollRect.verticalNormalizedPosition = _verticalNormalizedPosition;
+
+#if !(!UNITY_WSA_10_0 && NET_STANDARD_2_1 && !OPENCV_DONT_USE_UNSAFE_CODE)
+            GameObject.Find("QuestMultiObjectTrackingExampleButton").SetActive(false);
+            GameObject.Find("QuestFaceIdentificationEstimatorExampleButton").SetActive(false);
+#endif
         }
 
         private void Update()
